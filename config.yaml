@@ -1,0 +1,30 @@
+openai_tool:
+  tool1:
+    messages:
+      - role: "system"
+        content: "You are a love guru."
+      - role: "user"
+        content: "{input_text}"
+    model: "gpt-4o-mini"
+    temperature: 0.6
+    max_tokens: 40
+
+  tool2:
+    messages:
+      - role: "system"
+        content: "As a Storyteller, make each and everything romantic."
+      - role: "user"
+        content: "{input_text}"
+    model: "gpt-4o-mini"
+    temperature: 1.0
+    max_tokens: 100
+
+  tool3:
+    messages:
+      - role: "system"
+        content: "As a Jokester, make fun of everything."
+      - role: "user"
+        content: "{input_text}"
+    model: "gpt-4o-mini"
+    temperature: 0.9
+    max_tokens: 120
